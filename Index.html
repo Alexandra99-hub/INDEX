@@ -1,0 +1,122 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 1. Ejemplo de la etiqueta html -->
+    <!-- Esta etiqueta contiene todo el documento HTML. -->
+
+    <!-- 2. Ejemplo de la etiqueta head -->
+    <!-- Contiene la configuración y los metadatos de la página. -->
+
+    <!-- 3. Ejemplo de la etiqueta title -->
+    <title>Ejemplos de etiquetas HTML</title>
+</head>
+
+<body>
+
+    <h1>Ejemplos de etiquetas HTML</h1>
+    <p>Actividad de aprendizaje del SENA.</p>
+    <hr>
+
+    <!-- 4. Ejemplo de la etiqueta body -->
+    <h2>4. Etiqueta body</h2>
+    <p>Todo el contenido visible de esta página está dentro de body.</p>
+
+    <!-- 5. Ejemplo de la etiqueta h1 -->
+    <h2>5. Etiqueta h1</h2>
+    <h1>Este es un título principal</h1>
+
+    <!-- 6. Ejemplo de la etiqueta p -->
+    <h2>6. Etiqueta p</h2>
+    <p>Esta etiqueta permite escribir párrafos de texto.</p>
+
+    <!-- 7. Ejemplo de la etiqueta a -->
+    <h2>7. Etiqueta a</h2>
+    <a href="https://www.w3schools.com/html/" target="_blank">
+        Visitar tutorial de HTML
+    </a>
+
+    <!-- 8. Ejemplo de la etiqueta img -->
+    <h2>8. Etiqueta img</h2>
+    <p>Permite insertar una imagen en la página web.</p>
+    <img src="Imagen 1.jpg" alt="Imagen número 1" width="300">
+
+    <!-- 9. Ejemplo de la etiqueta video -->
+    <h2>9. Etiqueta video</h2>
+    <p>Permite reproducir videos en una página web.</p>
+    <video width="400" controls>
+        <source src="videoplayback.mp4" type="video/mp4">
+        Tu navegador no permite reproducir este video.
+    </video>
+
+    <!-- 10. Ejemplo de la etiqueta div -->
+    <h2>10. Etiqueta div</h2>
+    <div>
+        Este texto está dentro de un contenedor div.
+    </div>
+
+    <!-- 11. Ejemplo de la etiqueta ul -->
+    <h2>11. Etiqueta ul</h2>
+    <p>Esta etiqueta crea una lista sin numeración.</p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <!-- 12. Ejemplo de la etiqueta li -->
+    <h2>12. Etiqueta li</h2>
+    <p>Define cada elemento de una lista.</p>
+    <ul>
+        <li>Primer elemento de ejemplo</li>
+        <li>Segundo elemento de ejemplo</li>
+    </ul>
+
+    <!-- 13. Ejemplo de la etiqueta form -->
+    <h2>13. Etiqueta form</h2>
+    <p>Permite crear formularios para introducir información.</p>
+
+    <form id="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <button type="submit">Enviar formulario</button>
+    </form>
+
+    <p id="mensaje"></p>
+
+    <!-- 14. Ejemplo de la etiqueta textarea -->
+    <h2>14. Etiqueta textarea</h2>
+    <p>Permite escribir textos de varias líneas.</p>
+    <textarea rows="4" cols="35" placeholder="Escribe tu comentario"></textarea>
+
+    <!-- 15. Ejemplo de la etiqueta button -->
+    <h2>15. Etiqueta button</h2>
+    <p>Crea un botón que puede ejecutar una acción.</p>
+
+    <button type="button" onclick="mostrarMensaje()">
+        Haz clic aquí
+    </button>
+
+    <p id="resultado"></p>
+
+    <script>
+        document.getElementById("formulario").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("mensaje").textContent =
+                "Formulario enviado correctamente.";
+        });
+
+        function mostrarMensaje() {
+            document.getElementById("resultado").textContent =
+                "El botón funciona correctamente.";
+        }
+    </script>
+
+</body>
+</html>
+
